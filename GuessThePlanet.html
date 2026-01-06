@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the planet</title>
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+        *{  font-family: 'Courier New', Courier, monospace;
+            font-family: "Cedarville Cursive", cursive;
+            background-color: black;
+            
+        }
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            text-align: center;
+        }
+        .parent{
+            height: 700px;
+            width: 1000px;
+            /* border: 1px solid red; */
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: black;
+            
+            }
+        .child{
+            height: 200px;
+            width: 200px;
+            border:1px solid;
+            position: relative;
+           
+    
+        }
+        .innerChild{
+            position: absolute;
+            background-color: black;
+            height: 200px;
+            width: 200px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+         
+        }
+        .innerChild:hover{
+        transform: translateY(200px);
+        }
+        .child:nth-child(1)
+        {
+            background-image: url(../css/Assets/EARTH.gif);
+            background-size: cover;
+        }
+          .child:nth-child(2)
+        {
+            background-image: url(../css/Assets/MARS.gif);
+            background-size: cover;
+        }
+          .child:nth-child(3)
+        {
+            background-image: url(../css/Assets/JUPITER.gif);
+            background-size: cover;
+        }
+          .child:nth-child(4)
+        {
+            background-image: url(../css/Assets/SATURN.gif);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+   <h1>GUESS THE PLANET</h1>
+    <div class="parent">
+        <div class="child">
+            <div class="innerChild">
+               Third Planet
+            </div>
+        </div>
+          <div class="child">
+            <div class="innerChild">
+                Fourth Planet
+            </div>
+        </div>  
+        <div class="child">
+            <div class="innerChild">
+                Fifth Planet
+            </div>
+        </div>
+          <div class="child">
+            <div class="innerChild">
+                Sixth Planet
+            </div>
+        </div>
+       
+    </div>
+</body>
+</html>
